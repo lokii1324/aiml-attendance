@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI & ML Attendance Sheet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0f2027;  /* gradient background */
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .avatar-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .ai-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(270deg, #00f2fe, #4facfe, #00f2fe);
+      background-size: 600% 600%;
+      animation: aiPulse 5s ease infinite;
+      box-shadow: 0 0 20px #4facfe;
+      border: 4px solid #00f2fe;
+    }
+
+    @keyframes aiPulse {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    th {
+      background-color: rgba(0, 242, 254, 0.2);
+      color: #00f2fe;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .present {
+      color: #4caf50;
+    }
+
+    .absent {
+      color: #f44336;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AI & ML Class Attendance</h1>
+
+  <div class="avatar-container">
+    <div class="ai-avatar"></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>Arjun Verma</td>
+        <td>2025-07-26</td>
+        <td class="present">Present</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Meera Iyer</td>
+        <td>2025-07-26</td>
+        <td class="absent">Absent</td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>Ravi Singh</td>
+        <td>2025-07-26</td>
+        <td class="present">Present</td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>Aisha Khan</td>
+        <td>2025-07-26</td>
+        <td class="present">Present</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
